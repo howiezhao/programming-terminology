@@ -1,0 +1,11 @@
+docs/_build
+build/
+
+# virtualenv
+venv/
+
+# macOS
+.DS_Store
+
+# editor
+.vscode
