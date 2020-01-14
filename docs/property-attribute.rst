@@ -1,6 +1,10 @@
-property与attribute
-===================
-按照直译，property与attribute都可翻译为 **属性** ，严格来说，property是“个人财产”里的“财产”，是属于主体的另一个东西，是“大主体”的一部分。attribute是“属性值”里的“属性”，是对主体的一个测量，纯语义来说是只读的，实际工程中允许修改的属性都实际是在修改属性背后的某种东西。
+property 与 attribute
+======================
+
+按照直译，property 与 attribute 都可翻译为 **属性** ，
+严格来说，property 是“个人财产”里的“财产”，是属于主体的另一个东西，是“大主体”的一部分。
+attribute 是“属性值”里的“属性”，是对主体的一个测量，纯语义来说是只读的，
+实际工程中允许修改的属性都实际是在修改属性背后的某种东西。
 
 以下引用自知乎用户 `invalid s <https://www.zhihu.com/people/s.invalid/activities>`_ 的回答：
 

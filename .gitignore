@@ -9,3 +9,4 @@ venv/
 
 # editor
 .vscode
+.idea
