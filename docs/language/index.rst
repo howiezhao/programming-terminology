@@ -17,3 +17,8 @@
    pointer-reference
    array-list
    multiple-multilevel-inheritance
+   compile-build
+   property-attribute
+   static
+   operator
+   macro

@@ -15,13 +15,8 @@
    编程语言 <language/index>
    计算机网络 <network/index>
    操作系统 <os/index>
-   compile-build
-   property-attribute
    directory-folder
    ram-rom
    parent-delegation
-   static
-   operator
    handler
-   macro
    context

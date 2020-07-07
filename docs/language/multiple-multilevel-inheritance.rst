@@ -24,4 +24,4 @@ Multiple inheritance 常被翻译为 **多重继承** 或 **多继承**，Multil
     时刻记住，**多重继承** 和 **多继承** 是一个东西。
 
 .. seealso::
-   https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)
+   `<https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)>`_
