@@ -1,5 +1,8 @@
 docs/_build
 build/
+book
+_book
+public
 
 # virtualenv
 venv/
