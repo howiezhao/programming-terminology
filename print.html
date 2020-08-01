@@ -1,0 +1,436 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>programming-terminology</title>
+        
+        <meta name="robots" content="noindex" />
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="language/index.html"><strong aria-hidden="true">2.</strong> 编程语言</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="language/strongly-weakly-typed.html"><strong aria-hidden="true">2.1.</strong> 强类型与弱类型</a></li><li class="chapter-item expanded "><a href="language/statically-dynamiclly-typed.html"><strong aria-hidden="true">2.2.</strong> 静态类型与动态类型</a></li><li class="chapter-item expanded "><a href="language/function-method.html"><strong aria-hidden="true">2.3.</strong> 函数（function）与方法（method）</a></li><li class="chapter-item expanded "><a href="language/define-declare.html"><strong aria-hidden="true">2.4.</strong> define 与 declare</a></li><li class="chapter-item expanded "><a href="language/field-property.html"><strong aria-hidden="true">2.5.</strong> field 与 property</a></li><li class="chapter-item expanded "><a href="language/override-overload.html"><strong aria-hidden="true">2.6.</strong> overload 与 override</a></li><li class="chapter-item expanded "><a href="language/parameter-argument.html"><strong aria-hidden="true">2.7.</strong> parameter 与 argument</a></li><li class="chapter-item expanded "><a href="language/pointer-reference.html"><strong aria-hidden="true">2.8.</strong> pointer 与 reference</a></li><li class="chapter-item expanded "><a href="language/array-list.html"><strong aria-hidden="true">2.9.</strong> 数组（array）与列表（list）</a></li><li class="chapter-item expanded "><a href="language/multiple-multilevel-inheritance.html"><strong aria-hidden="true">2.10.</strong> 多重继承（Multiple inheritance）与多层继承（Multilevel inheritance）</a></li><li class="chapter-item expanded "><a href="language/compile-build.html"><strong aria-hidden="true">2.11.</strong> compile 与 build</a></li><li class="chapter-item expanded "><a href="language/property-attribute.html"><strong aria-hidden="true">2.12.</strong> property 与 attribute</a></li><li class="chapter-item expanded "><a href="language/static.html"><strong aria-hidden="true">2.13.</strong> static</a></li><li class="chapter-item expanded "><a href="language/operator.html"><strong aria-hidden="true">2.14.</strong> operator</a></li><li class="chapter-item expanded "><a href="language/macro.html"><strong aria-hidden="true">2.15.</strong> 宏（macro）</a></li></ol></li><li class="chapter-item expanded "><a href="network/index.html"><strong aria-hidden="true">3.</strong> 计算机网络</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="network/proxy-agent.html"><strong aria-hidden="true">3.1.</strong> proxy 与 agent</a></li><li class="chapter-item expanded "><a href="network/socket.html"><strong aria-hidden="true">3.2.</strong> socket</a></li></ol></li><li class="chapter-item expanded "><a href="os/index.html"><strong aria-hidden="true">4.</strong> 操作系统</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="os/sync-async.html"><strong aria-hidden="true">4.1.</strong> 同步与异步</a></li><li class="chapter-item expanded "><a href="os/concurrent-parallel.html"><strong aria-hidden="true">4.2.</strong> 并发与并行</a></li><li class="chapter-item expanded "><a href="os/process-thread.html"><strong aria-hidden="true">4.3.</strong> 进程与线程</a></li><li class="chapter-item expanded "><a href="os/stack-heap.html"><strong aria-hidden="true">4.4.</strong> stack 与 heap</a></li><li class="chapter-item expanded "><a href="os/disk.html"><strong aria-hidden="true">4.5.</strong> 磁盘</a></li></ol></li><li class="chapter-item expanded "><a href="directory-folder.html"><strong aria-hidden="true">5.</strong> directory 与 folder</a></li><li class="chapter-item expanded "><a href="ram-rom.html"><strong aria-hidden="true">6.</strong> RAM 与 ROM</a></li><li class="chapter-item expanded "><a href="parent-delegation.html"><strong aria-hidden="true">7.</strong> parent delegation</a></li><li class="chapter-item expanded "><a href="handler.html"><strong aria-hidden="true">8.</strong> handler</a></li><li class="chapter-item expanded "><a href="context.html"><strong aria-hidden="true">9.</strong> context</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">programming-terminology</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        <a href="https://github.com/howiezhao/programming-terminology" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#编程术语及其翻译" id="编程术语及其翻译">编程术语及其翻译</a></h1>
+<p>本文档为个人学习过程中遇到的编程相关的易混淆术语或是翻译不佳术语的集合，
+旨在帮助初学编程的人解清疑惑，欢迎各位多多补充。</p>
+<h1><a class="header" href="#编程语言相关" id="编程语言相关">编程语言相关</a></h1>
+<p>以下为编程语言相关术语：</p>
+<h1><a class="header" href="#强类型与弱类型" id="强类型与弱类型">强类型与弱类型</a></h1>
+<p>编程语言常被分为：<strong>强类型</strong>（Strongly Typed）语言和<strong>弱类型</strong>（Weakly Typed）语言。</p>
+<p>以下引用自知乎用户 <a href="https://www.zhihu.com/people/excited-vczh">vczh</a> 的回答：</p>
+<blockquote>
+<p>强类型：偏向于不容忍隐式类型转换。譬如说 haskell 的 int 就不能变成 double</p>
+<p>弱类型：偏向于容忍隐式类型转换。譬如说 C 语言的 int 可以变成 double</p>
+</blockquote>
+<p>举例来说，在 C 语言中，以下语句是合法的，故其是弱类型：</p>
+<pre><code class="language-c">int a = 1;
+char b = '2';
+a + b;
+</code></pre>
+<p>在 Python 中，以下语句是不合法的，故其是强类型：</p>
+<pre><code class="language-python">a = 1
+b = '2'
+a + b
+</code></pre>
+<blockquote>
+<p><strong><em>NOTE:</em></strong> 强、弱类型并不是指在定义变量时要加上类型名，
+这种行为应该称为 <strong>显式</strong> 、<strong>隐式</strong> 类型。</p>
+</blockquote>
+<h1><a class="header" href="#静态类型与动态类型" id="静态类型与动态类型">静态类型与动态类型</a></h1>
+<p>编程语言常被分为：<strong>静态类型</strong>（Statically Typed）语言和<strong>动态类型</strong>（Dynamiclly Typed）语言。</p>
+<p>以下引用自知乎用户 <a href="https://www.zhihu.com/people/excited-vczh">vczh</a> 的回答：</p>
+<blockquote>
+<p>静态类型：编译的时候就知道每一个变量的类型，因为类型错误而不能做的事情是语法错误。</p>
+<p>动态类型：编译的时候不知道每一个变量的类型，因为类型错误而不能做的事情是运行时错误。譬如说你不能对一个数字a写a[10]当数组用。</p>
+</blockquote>
+<p><a href="language/ignored"></a></p>
+<blockquote>
+<p><strong><em>NOTE:</em></strong> 强、弱类型并不是指在定义变量时要加上类型名，这种行为应该称为 <strong>显式</strong>、<strong>隐式</strong> 类型。</p>
+</blockquote>
+<h1><a class="header" href="#函数function与方法method" id="函数function与方法method">函数（function）与方法（method）</a></h1>
+<p>function 常被翻译为<strong>函数</strong>，method 常被翻译为<strong>方法</strong>。</p>
+<p>从宏观意义上来说，两者都代表一段可复用的代码，但在某些语言中，两者具有不同的含义：</p>
+<p>一般认为，函数不属于类或对象，而方法属于类或对象。
+因为 C 语言是一门面向过程的语言，其不含类与对象，所以其只有函数，没有方法；
+而 Java 是一门<strong>纯</strong>的面向对象的语言，所以其只有方法，没有函数。</p>
+<p>倘若，有一个函数/方法为 <code>upper()</code>，其作用是使字符串全大写，
+若为函数，则调用形式为 <code>upper(str)</code>，
+若为方法，则调用形式为 <code>str.upper()</code>。</p>
+<h1><a class="header" href="#define-与-declare" id="define-与-declare">define 与 declare</a></h1>
+<p>define 常被翻译为 <strong>定义</strong> ，declare 常被翻译为 <strong>声明</strong> 。</p>
+<h1><a class="header" href="#field-与-property" id="field-与-property">field 与 property</a></h1>
+<p>field 常被翻译为 <strong>字段</strong> 或者 <strong>域</strong> ，property 常被翻译为 <strong>属性</strong> 。</p>
+<p>面向对象编程的主要工作是创造类和使用类，而类中则包含了众多成员，
+其中主要有 <strong>成员变量</strong> 和 <strong>成员方法</strong> ，
+成员变量定义了这个类有什么，而成员方法则定义了这个类能干什么。</p>
+<p>从某种意义上来说，以上所说的成员变量就等同于字段。</p>
+<p>面向对象的三大特征之一就是 <strong>封装</strong>，封装具体指：
+字段（成员变量）应该 <strong>私有</strong> 化，
+此外定义一些 <strong>公共</strong> 的方法以便从外部访问私有的字段（成员变量）。</p>
+<p>以 Java 为例：</p>
+<pre><code class="language-java">class Phone{
+    private int size;
+
+    public getSize(){
+        return size;
+    }
+    public setSize(int size){
+        this.size = size;
+    }
+}
+</code></pre>
+<p>这难免有些麻烦，因为每写一个字段，都要实现相应的 getter/setter 方法，
+而属性就是为此而设计的，使用属性的 C# 示例如下：</p>
+<pre><code class="language-csharp">class Phone{
+    public int size {get; set}
+}
+</code></pre>
+<p>所以，请记住，Java 中没有属性！</p>
+<h1><a class="header" href="#overload-与-override" id="overload-与-override">overload 与 override</a></h1>
+<p>overload 常被翻译为 <strong>重载</strong> ，override 常被翻译为 <strong>重写</strong> 或者 <strong>覆盖</strong> 。</p>
+<p>重载的核心在于“ <strong>一物多用</strong> ”，而重写的核心在于“ <strong>覆盖</strong> ”。</p>
+<p>重载一般分为 <strong>方法重载</strong> 和 <strong>运算符重载</strong> ，其实运算符的本质也是方法。
+让我们以方法重载为例，即 <strong>相同的方法名可以具有不同的参数列表</strong> ，
+具体而言，不同的参数列表指参数的 <strong>类型</strong> 、 <strong>个数</strong> 、 <strong>顺序</strong> 不同。
+请注意，方法重载的参数类型可能会出现 <strong>隐式类型转换</strong> ，此时结果会产生混淆。</p>
+<blockquote>
+<p><strong><em>WARNING:</em></strong> 不能以方法的返回值来区分方法重载，原因很简单，有时我们是为了副作用而调用方法，这时会忽略其返回值。</p>
+</blockquote>
+<p>在大多数 OOP 语言中，迫使语法支持方法重载这一特性的一个主要原因是构造器的出现，因为构造器的名字与类名相同，
+要想有多个构造器，就必须用到方法重载。</p>
+<h1><a class="header" href="#parameter-与-argument" id="parameter-与-argument">parameter 与 argument</a></h1>
+<p>按照直译，parameter 与 argument 都可翻译为参数，但在编程语言中，两者略有不同：</p>
+<p><strong>parameter</strong> 通常指 <strong>形参</strong> （形式参数，formal parameter），即定义函数时括号里的变量；
+而 <strong>argument</strong> 通常指 <strong>实参</strong> （实际参数，actual argument），即函数调用时使用的值。</p>
+<p>在 K&amp;R 那本著名的 C 语言圣经中谈到过这个问题，如下：</p>
+<blockquote>
+<p>&quot;We will generally use parameter for a variable named in the parenthesized list in a function definition, and argument for the value used in a call of the function. The terms formal argument and actual argument are sometimes used for the same distinction.&quot;</p>
+<p>-- 《The C Programming Language》Section 1.7 K&amp;R</p>
+</blockquote>
+<h1><a class="header" href="#pointer-与-reference" id="pointer-与-reference">pointer 与 reference</a></h1>
+<p>pointer 常被翻译为 <strong>指针</strong> ，reference 常被翻译为 <strong>引用</strong> 。</p>
+<h1><a class="header" href="#数组array与列表list" id="数组array与列表list">数组（array）与列表（list）</a></h1>
+<p>array 常被翻译为 <strong>数组</strong>，list 常被翻译为 <strong>列表</strong>。</p>
+<p>从宏观意义上来说，两者都属于常用的数据结构，但在某些语言中，两者具有不同的含义：</p>
+<p>一般认为，数组中存储的数据类型必须相同，且数组一经确定，大小即固定不变；而列表中的元素类型可不同，列表的大小也不固定。</p>
+<blockquote>
+<p><strong><em>NOTE:</em></strong> 在 Python 中要想使用数组，可以使用 <code>array</code> 模块中的 <code>array</code> 类。
+在 Java 中要想使用列表，可以使用 <code>ArrayList</code> 泛型类。</p>
+</blockquote>
+<h1><a class="header" href="#多重继承multiple-inheritance与多层继承multilevel-inheritance" id="多重继承multiple-inheritance与多层继承multilevel-inheritance">多重继承（Multiple inheritance）与多层继承（Multilevel inheritance）</a></h1>
+<p>Multiple inheritance 常被翻译为 <strong>多重继承</strong> 或 <strong>多继承</strong>，Multilevel inheritance 常被翻译为 <strong>多层继承</strong>。</p>
+<p>多重继承指一个类同时继承多个类，而多层继承指一个类继承了多个层次。</p>
+<p>以 Python 为例来说，多重继承的示例如下::</p>
+<pre><code>class A(B, C):
+    pass
+</code></pre>
+<p>多层继承的示例如下::</p>
+<pre><code>class B(C):
+    pass
+
+class A(B):
+    pass
+</code></pre>
+<blockquote>
+<p><strong><em>NOTE:</em></strong> 有的文章将 <strong>多重继承</strong> 解释为 <strong>多层继承</strong>，这是有问题的。</p>
+<p>时刻记住，<strong>多重继承</strong> 和 <strong>多继承</strong> 是一个东西。</p>
+</blockquote>
+<p><a href="language/ignored"></a></p>
+<blockquote>
+<p><strong><em>SEEALSO:</em></strong> <a href="https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)">https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)</a></p>
+</blockquote>
+<h1><a class="header" href="#compile-与-build" id="compile-与-build">compile 与 build</a></h1>
+<p>compile 常被翻译为 <strong>编译</strong> ，build 常被翻译为 <strong>构建</strong> 。</p>
+<h1><a class="header" href="#property-与-attribute" id="property-与-attribute">property 与 attribute</a></h1>
+<p>按照直译，property 与 attribute 都可翻译为 <strong>属性</strong> ，
+严格来说，property 是“个人财产”里的“财产”，是属于主体的另一个东西，是“大主体”的一部分。
+attribute 是“属性值”里的“属性”，是对主体的一个测量，纯语义来说是只读的，
+实际工程中允许修改的属性都实际是在修改属性背后的某种东西。</p>
+<p>以下引用自知乎用户 <a href="https://www.zhihu.com/people/s.invalid/activities">invalid s</a> 的回答：</p>
+<blockquote>
+<p>property更偏重“拥有实体物质的所有权”这种含义，偏向于“外在属性”，比如谁是百万富翁、谁是豪车车主之类。</p>
+<p>而attribute更侧重“个体特质”含义，偏向于“内在属性”，比如谁非常聪明、谁很强壮之类。</p>
+<p>打个比方的话，玩游戏，你的角色的强壮是180，这个强壮180就是“attribute”；同时，你的角色拥有一把屠龙刀，是“屠龙刀玩家”，这个“屠龙刀玩家”就是property。</p>
+<p>微软的WPF文档里面有这样一句话，说它的xaml支持 <em>“map property to attribute”</em> ；而对应的中文资料直接说成 <em>“把属性映射为属性”</em> ……</p>
+<p>典型场景里，property指的是“给画布一支紫色的画笔”这个动作，即必须先 <code>new</code> 一个 <code>pen</code> ，设置 <code>pen</code> 的 <code>color</code> 为紫色，再把这个 <code>pen</code> 传给画布。这个过程有明确的所有权转移（在外部 <code>new</code> 了一个 <code>pen</code> 、然后把这个 <code>pen</code> 对象的所有权赋予画布对象）。</p>
+<p>而通过“map property to attribute”，就可以直接设置画布的 <code>pen color</code> 为紫，就好像设置一个attribute一样，隐藏了所有权转移这个动作。</p>
+<p>所以，我倾向于把它翻译成 <em>“把‘传递对象’这个动作映射为‘设置属性’”</em> 。</p>
+</blockquote>
+<h1><a class="header" href="#static" id="static">static</a></h1>
+<h1><a class="header" href="#operator" id="operator">operator</a></h1>
+<p>operator 可被翻译为 <strong>操作符</strong> 或 <strong>运算符</strong>，但个人习惯称其为 <strong>运算符</strong>。</p>
+<h1><a class="header" href="#宏macro" id="宏macro">宏（macro）</a></h1>
+<p>在计算机科学中，宏一般指一段可以被替换的文本。</p>
+<p>在编程语言中，使用宏可以减少重复、简化代码。</p>
+<p>将宏替换成相应内容的过程称为 <strong>宏展开</strong>。</p>
+<h1><a class="header" href="#计算机网络相关" id="计算机网络相关">计算机网络相关</a></h1>
+<p>以下为计算机网络相关术语：</p>
+<h1><a class="header" href="#proxy-与-agent" id="proxy-与-agent">proxy 与 agent</a></h1>
+<p>按照直译，proxy 与 agent 都可翻译为代理，但在计算机网络中，
+proxy 更倾向于表示 <strong>服务器代理</strong> 这种动作，
+而 agent 则表示 <strong>代理服务器</strong> 这种物质。</p>
+<p>以下引用自知乎用户 <a href="https://www.zhihu.com/people/s.invalid/activities">invalid s</a> 的回答：</p>
+<blockquote>
+<p>proxy 是牵线木偶，你说一句它做一句。
+比如，喂，你现在马上去交易所，帮我买 100支 微软股票，然后把我名下 200 股 Facebook 股票以 xx 元的价格挂上去卖掉。
+这个跑腿的家伙就是 proxy。</p>
+<p>agent 拥有独立思考/行动能力，可以代替你做一些决定。
+比如，这是我的管家/律师，合同的事你和他谈。他的决定就是我的决定。
+这个得到了授权、可以独立以你的名义完成某个任务、必要时允许他根据情况做出自主决定的，就是 agent。</p>
+<p>所以个人倾向于把 proxy 翻译成代理，agent 则根据语境翻译成助手/代办之类会好理解一些（比如office里面的“大眼夹”就是agent，中文叫“office小助手”；苹果的siri微软的小娜等等也是agent）。</p>
+</blockquote>
+<h1><a class="header" href="#socket" id="socket">socket</a></h1>
+<h1><a class="header" href="#操作系统相关" id="操作系统相关">操作系统相关</a></h1>
+<p>以下为操作系统相关术语：</p>
+<h1><a class="header" href="#同步与异步" id="同步与异步">同步与异步</a></h1>
+<p>同步（synchronize, sync）：指一个进程在执行某个请求时，若该请求需要一段时间才能返回信息，
+那么，这个进程将会一直等待下去，直到收到返回信息才继续执行下去，
+比如两个人打电话</p>
+<p>异步（asynchronous, async）：指进程不需要一直等下去，而是继续执行下面的操作，不管其他进程的状态，
+当有消息返回时系统会通知进程进行处理，这样可以提高执行的效率，
+比如两个人发短信</p>
+<h1><a class="header" href="#并发与并行" id="并发与并行">并发与并行</a></h1>
+<p>并发（concurrent）：在某个时间段内有多个程序在执行</p>
+<p>并行（parallel）：在某个时间点有多个程序在执行</p>
+<p>并发是伪并行</p>
+<h1><a class="header" href="#进程与线程" id="进程与线程">进程与线程</a></h1>
+<p>程序：存储在硬盘上的源代码</p>
+<p>进程（process）：在内存中动态执行的程序，
+每个进程有各自的内存地址空间</p>
+<p>线程（thread）：是进程的一部分，与进程共享内存地址空间</p>
+<h1><a class="header" href="#stack-与-heap" id="stack-与-heap">stack 与 heap</a></h1>
+<p>stack 常被翻译为 <strong>栈</strong>，heap 常被翻译为 <strong>堆</strong>。</p>
+<p>栈通常有两种含义，一种是指 <strong>数据结构</strong>，另一种是指 <strong>内存区域</strong>，
+与此相对的，堆也一样。</p>
+<p>当指数据结构时，栈的特点是 <strong>先进后出</strong>，而堆的特点是</p>
+<p>当指内存区域时，栈的特点是 <strong>整洁有序</strong>，而堆的特点是 <strong>杂乱无章</strong>。</p>
+<blockquote>
+<p><strong><em>NOTE:</em></strong> 在一些老旧的翻译文章中，常会见到将 stack 翻译为 <strong>堆栈</strong>，
+个人不赞同这种翻译，因为这会让人分不清究竟指的是堆和栈这两种不同的东西，还是栈这一种东西（虽然译者本意是如此）。</p>
+</blockquote>
+<h1><a class="header" href="#磁盘" id="磁盘">磁盘</a></h1>
+<p>磁盘（disk）一般分为两类：</p>
+<ul>
+<li>硬盘（hard disk）</li>
+<li>软盘（floppy disk）</li>
+</ul>
+<p>注意：磁盘不等于硬盘。</p>
+<h1><a class="header" href="#directory-与-folder" id="directory-与-folder">directory 与 folder</a></h1>
+<p>directory 常被翻译为 <strong>目录</strong>，folder 常被翻译为 <strong>文件夹</strong>。</p>
+<p>从宏观意义上来说，目录与文件夹是一回事。
+但在命令行界面中，更倾向于使用 <strong>目录</strong> 一词；
+在图形界面中，更倾向于使用 <strong>文件夹</strong> 一词。
+这是因为文件夹有明显的图形色彩。</p>
+<p>所以，在 Windows 或 macOS 中，更常见于文件夹一词；
+而在 Linux 中更常见于目录一词。</p>
+<p>值得注意的是，<strong>目录</strong> 比 <strong>文件夹</strong> 要更具备计算机科学含义。</p>
+<h1><a class="header" href="#ram-与-rom" id="ram-与-rom">RAM 与 ROM</a></h1>
+<p>RAM：随机存储器，可读可写，但必须带电存储，关机后存储的内容丢失</p>
+<p>ROM：只读存储器，只能读取不能写入，关机后其中的内容不丢失</p>
+<h1><a class="header" href="#parent-delegation" id="parent-delegation">parent delegation</a></h1>
+<h1><a class="header" href="#handler" id="handler">handler</a></h1>
+<h1><a class="header" href="#context" id="context">context</a></h1>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>

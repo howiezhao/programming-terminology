@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>操作系统 - programming-terminology</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../language/index.html"><strong aria-hidden="true">2.</strong> 编程语言</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../language/strongly-weakly-typed.html"><strong aria-hidden="true">2.1.</strong> 强类型与弱类型</a></li><li class="chapter-item expanded "><a href="../language/statically-dynamiclly-typed.html"><strong aria-hidden="true">2.2.</strong> 静态类型与动态类型</a></li><li class="chapter-item expanded "><a href="../language/function-method.html"><strong aria-hidden="true">2.3.</strong> 函数（function）与方法（method）</a></li><li class="chapter-item expanded "><a href="../language/define-declare.html"><strong aria-hidden="true">2.4.</strong> define 与 declare</a></li><li class="chapter-item expanded "><a href="../language/field-property.html"><strong aria-hidden="true">2.5.</strong> field 与 property</a></li><li class="chapter-item expanded "><a href="../language/override-overload.html"><strong aria-hidden="true">2.6.</strong> overload 与 override</a></li><li class="chapter-item expanded "><a href="../language/parameter-argument.html"><strong aria-hidden="true">2.7.</strong> parameter 与 argument</a></li><li class="chapter-item expanded "><a href="../language/pointer-reference.html"><strong aria-hidden="true">2.8.</strong> pointer 与 reference</a></li><li class="chapter-item expanded "><a href="../language/array-list.html"><strong aria-hidden="true">2.9.</strong> 数组（array）与列表（list）</a></li><li class="chapter-item expanded "><a href="../language/multiple-multilevel-inheritance.html"><strong aria-hidden="true">2.10.</strong> 多重继承（Multiple inheritance）与多层继承（Multilevel inheritance）</a></li><li class="chapter-item expanded "><a href="../language/compile-build.html"><strong aria-hidden="true">2.11.</strong> compile 与 build</a></li><li class="chapter-item expanded "><a href="../language/property-attribute.html"><strong aria-hidden="true">2.12.</strong> property 与 attribute</a></li><li class="chapter-item expanded "><a href="../language/static.html"><strong aria-hidden="true">2.13.</strong> static</a></li><li class="chapter-item expanded "><a href="../language/operator.html"><strong aria-hidden="true">2.14.</strong> operator</a></li><li class="chapter-item expanded "><a href="../language/macro.html"><strong aria-hidden="true">2.15.</strong> 宏（macro）</a></li></ol></li><li class="chapter-item expanded "><a href="../network/index.html"><strong aria-hidden="true">3.</strong> 计算机网络</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../network/proxy-agent.html"><strong aria-hidden="true">3.1.</strong> proxy 与 agent</a></li><li class="chapter-item expanded "><a href="../network/socket.html"><strong aria-hidden="true">3.2.</strong> socket</a></li></ol></li><li class="chapter-item expanded "><a href="../os/index.html" class="active"><strong aria-hidden="true">4.</strong> 操作系统</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../os/sync-async.html"><strong aria-hidden="true">4.1.</strong> 同步与异步</a></li><li class="chapter-item expanded "><a href="../os/concurrent-parallel.html"><strong aria-hidden="true">4.2.</strong> 并发与并行</a></li><li class="chapter-item expanded "><a href="../os/process-thread.html"><strong aria-hidden="true">4.3.</strong> 进程与线程</a></li><li class="chapter-item expanded "><a href="../os/stack-heap.html"><strong aria-hidden="true">4.4.</strong> stack 与 heap</a></li><li class="chapter-item expanded "><a href="../os/disk.html"><strong aria-hidden="true">4.5.</strong> 磁盘</a></li></ol></li><li class="chapter-item expanded "><a href="../directory-folder.html"><strong aria-hidden="true">5.</strong> directory 与 folder</a></li><li class="chapter-item expanded "><a href="../ram-rom.html"><strong aria-hidden="true">6.</strong> RAM 与 ROM</a></li><li class="chapter-item expanded "><a href="../parent-delegation.html"><strong aria-hidden="true">7.</strong> parent delegation</a></li><li class="chapter-item expanded "><a href="../handler.html"><strong aria-hidden="true">8.</strong> handler</a></li><li class="chapter-item expanded "><a href="../context.html"><strong aria-hidden="true">9.</strong> context</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">programming-terminology</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        <a href="https://github.com/howiezhao/programming-terminology" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#操作系统相关" id="操作系统相关">操作系统相关</a></h1>
+<p>以下为操作系统相关术语：</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../network/socket.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../os/sync-async.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../network/socket.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../os/sync-async.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
