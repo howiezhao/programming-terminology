@@ -33,4 +33,4 @@ mdbook serve
 
 ## 许可协议
 
-本文档采用 [CC BY-SA 4.0](LICENSE) 许可协议，转载请注明出处！
+本文档采用 [CC BY 4.0](LICENSE) 许可协议，转载请注明出处！
