@@ -22,6 +22,7 @@
   - [socket](network/socket.md)
 - [操作系统](os/README.md)
   - [同步与异步](os/sync-async.md)
+  - [阻塞与非阻塞](os/blocking-nonblocking.md)
   - [并发与并行](os/concurrent-parallel.md)
   - [进程与线程](os/process-thread.md)
   - [stack 与 heap](os/stack-heap.md)

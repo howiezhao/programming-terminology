@@ -6,4 +6,6 @@ src = "src"
 title = "programming-terminology"
 
 [output.html]
+preferred-dark-theme = "coal"
+google-analytics = "UA-104250838-3"
 git-repository-url = "https://github.com/howiezhao/programming-terminology"
